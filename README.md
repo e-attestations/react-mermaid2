@@ -1,4 +1,4 @@
-# React &lt;Mermaid&gt;
+# React Mermaid 2
 
 > A React 16.8+ (using Hooks) component to display [mermaid](https://github.com/knsv/mermaid) diagrams, flowcharts, gantt charts, etc.
 
@@ -14,41 +14,30 @@ Source : [https://mermaid-js.github.io/mermaid/#/](https://mermaid-js.github.io/
 npm install --save react-mermaid2
 ```
 
-or 
+or
 
 ```bash
 yarn add react-mermaid2
 ```
 
-
-
 ## Usage
 
 ```javascript
-import React from 'react';
-import Mermaid from 'react-mermaid2';
+import React from "react"
+import Mermaid from "react-mermaid2"
 
 export default MyComponentApp = () => {
   return (
-      <Mermaid name="myDiagram">
-        graph TD;
-          A-->B;
-          A-->C;
-          B-->D;
-          C-->D;
-      </Mermaid>
+    <Mermaid name="myDiagram">graph TD; A-->B; A-->C; B-->D; C-->D;</Mermaid>
   )
 }
 ```
 
-
 ## Options
 
-
-Property | Type     | Argument     | Default   | Description
----------|----------|--------------|-----------|------------
-name     | `string` | `<optional>` | `mermaid` | The name of your mermaid diagram/flowchart/gantt etc.
-
+| Property | Type     | Argument     | Default   | Description                                           |
+| -------- | -------- | ------------ | --------- | ----------------------------------------------------- |
+| name     | `string` | `<optional>` | `mermaid` | The name of your mermaid diagram/flowchart/gantt etc. |
 
 ## Developing
 
@@ -62,7 +51,7 @@ After cloning the repo, go to the local copy, then install dependencies.
 npm install
 ```
 
-or 
+or
 
 ```bash
 yarn
@@ -87,7 +76,6 @@ yarn build
 If you want to contribute to this project please take care to maintain the existing coding style.
 
 Feel free to add unit tests for any new or changed functionality.
-
 
 ## License
 
