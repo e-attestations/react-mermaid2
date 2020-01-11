@@ -1,7 +1,7 @@
 {
   "name": "react-mermaid2",
   "description": "A React (>v16.8) component for Mermaid js (https://mermaid-js.github.io/)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/e-attestations/react-mermaid2",
   "author": {
     "name": "Vincent DAGOURY",
@@ -23,6 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "package": "babel -d dist src/Mermaid.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean": "rm -rf dist && mkdir dist",
