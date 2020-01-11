@@ -28,7 +28,13 @@ import Mermaid from "react-mermaid2"
 
 export default MyComponentApp = () => {
   return (
-    <Mermaid name="myDiagram">graph TD; A-->B; A-->C; B-->D; C-->D;</Mermaid>
+    <Mermaid chart={`
+        graph TD;
+        A-->B;
+        A-->C;
+        B-->D;
+        C-->D;
+        `}/>
   )
 }
 ```
