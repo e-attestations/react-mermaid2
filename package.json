@@ -1,0 +1,47 @@
+{
+  "name": "react-mermaid2",
+  "description": "A React (>v16.8) component for Mermaid js (https://mermaid-js.github.io/)",
+  "version": "0.1.0",
+  "homepage": "https://github.com/e-attestations/react-mermaid2",
+  "author": {
+    "name": "Vincent DAGOURY",
+    "email": "v.dagoury@e-attestations.com",
+    "url": "https://e-attestations.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/e-attestations/react-mermaid2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/e-attestations/react-mermaid2/issues"
+  },
+  "license": "MIT",
+  "main": "dist/react-mermaid",
+  "engines": {
+    "node": ">= 12.0.0"
+  },
+  "scripts": {
+    "build": "babel -d dist src",
+    "clean": "rm -rf dist && mkdir dist",
+    "watch": "babel -w -d dist src",
+    "preversion": "npm run clean && npm run build",
+    "postpublish": "git push && git push --tag"
+  },
+  "dependencies": {
+    "mermaid": "^8.4.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "core-js": "^3.6.3",
+    "react": "^16.12.0"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "mermaid",
+    "diagram",
+    "markdown"
+  ]
+}
