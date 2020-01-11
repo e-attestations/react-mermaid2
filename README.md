@@ -26,7 +26,7 @@ yarn add react-mermaid2
 import React from "react"
 import Mermaid from "react-mermaid2"
 
-export default MyComponentApp = () => {
+export default Component = () => {
   return (
     <Mermaid chart={`
         graph TD;
@@ -43,7 +43,10 @@ export default MyComponentApp = () => {
 
 | Property | Type     | Argument     | Default   | Description                                           |
 | -------- | -------- | ------------ | --------- | ----------------------------------------------------- |
-| name     | `string` | `<optional>` | `mermaid` | The name of your mermaid diagram/flowchart/gantt etc. |
+| chart     | `string` | `<optional>` | `mermaid` | The mermaid code of your chart. Check Mermaid js documentation for details. |
+| name     | `string` | `<optional>` | `` | On optional name of your mermaid diagram/flowchart/gantt etc. |
+| config     | `object` | `<optional>` | `` | On optional object with one of several Mermaid config parameters. Check Mermaid js documentation for details.
+
 
 ## Developing
 
@@ -65,16 +68,32 @@ yarn
 
 ### Build
 
-Run the following task to compile from `src/` to `dist/`.
+Run the following task to compile from `src/` to `dist/Mermaid.js`.
 
 ```bash
-npm run build
+npm run package
 ```
 
 or
 
 ```bash
-yarn build
+yarn package
+```
+
+## Demo application
+
+This repository proposes a React demonstration appication with component demonstration using a chart collection from a separate `collection.js' file.
+
+You can fork/download the repo and launch the demo app to see the component in action.
+
+```bash
+npm start
+```
+
+or
+
+```bash
+yarn start
 ```
 
 ## Contributing
