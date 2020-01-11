@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mermaid component Render mermaid void diagram 1`] = `
+<div
+  chart="graph LR;
+    A-->B;
+    B-->C;
+    B-->D[plop lanflz eknlzeknfz];"
+  className="mermaid"
+  id="char1"
+/>
+`;
