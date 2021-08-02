@@ -2,11 +2,12 @@
 
 exports[`Mermaid component Render mermaid void diagram 1`] = `
 <div
-  chart="graph LR;
-    A-->B;
-    B-->C;
-    B-->D[plop lanflz eknlzeknfz];"
   className="mermaid"
-  id="char1"
-/>
+  name="char1"
+>
+  graph LR;
+    A--&gt;B;
+    B--&gt;C;
+    B--&gt;D[plop lanflz eknlzeknfz];
+</div>
 `;
